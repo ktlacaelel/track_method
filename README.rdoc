@@ -18,7 +18,7 @@ Tracks how long a method takes, and logs with color highlighting expensive metho
 
 == Result
 
-  ![https://raw.github.com/wiki/ktlacaelel/track_method/track_method_usage.jpg](Usage example)
+[https://raw.github.com/wiki/ktlacaelel/track_method/track_method_usage.jpg]
 
 == Copyright
 
