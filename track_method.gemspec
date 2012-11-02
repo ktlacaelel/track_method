@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/track_method.rb",
     "test/helper.rb",
-    "test/test_track_method.rb"
+    "test/test_track_method.rb",
+    "track_method.gemspec"
   ]
   s.homepage = %q{http://github.com/ktlacaelel/track_method}
   s.licenses = ["MIT"]
