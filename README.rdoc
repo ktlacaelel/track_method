@@ -1,16 +1,24 @@
 = track_method
 
-Description goes here.
+Tracks how long a method takes, and logs with color highlighting expensive method calls.
 
 == Contributing to track_method
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+    require 'rubygems'
+    require 'track_method'
+
+    class Foo
+      def bar(x, y, z)
+        sleep [0.2, 0.1, 0.0, 1.5, 0.4].shuffle.first
+      end
+    end
+
+    Foo.track_method :bar
+    10.times { Foo.new.bar(1, 2, 3) }
+
+== Result
+
+  ![https://raw.github.com/wiki/ktlacaelel/track_method/track_method_usage.jpg](Usage example)
 
 == Copyright
 
