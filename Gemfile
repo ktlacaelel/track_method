@@ -12,3 +12,7 @@ group :development do
   gem "jeweler", "~> 1.8.3"
   gem "rcov", ">= 0"
 end
+
+gem 'wrap_method'
+gem 'cobalt'
+

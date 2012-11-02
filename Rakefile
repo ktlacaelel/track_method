@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "track_method"
   gem.homepage = "http://github.com/ktlacaelel/track_method"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Debug, Track and benchmark methods.}
+  gem.description = %Q{Tracks how long a method takes, and logs with color highlighting expensive method calls.}
   gem.email = "kazu.dev@gmail.com"
   gem.authors = ["kazuyoshi tlacaelel"]
   # dependencies defined in Gemfile
