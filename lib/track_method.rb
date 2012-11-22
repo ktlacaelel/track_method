@@ -34,7 +34,7 @@ class Module
 
       argument_mapping = {}
       method_arguments.each do |method_label, method_needle|
-        argument_mapping[:method_label] = args[method_needle]
+        argument_mapping[method_label] = args[method_needle]
       end
 
       benchmark_output = "#{(benchmark_at).to_s.rjust(20, ' ')} #{self.name}.#{method_name}(#{argument_mapping.inspect})"
